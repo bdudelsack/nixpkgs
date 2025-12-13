@@ -281,6 +281,14 @@ in
 
   idea-oss = _idea-oss;
 
+  idea = buildIdea {
+    pname = "idea";
+    extraBuildInputs = [
+      lldb
+      musl
+    ];
+  };
+
   mps = mkJetBrainsProduct { pname = "mps"; };
 
   phpstorm = mkJetBrainsProduct {
