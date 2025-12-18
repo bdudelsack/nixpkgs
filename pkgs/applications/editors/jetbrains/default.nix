@@ -277,8 +277,6 @@ in
           '';
       });
 
-  idea = _idea;
-
   idea-oss = _idea-oss;
 
   idea = buildIdea {
